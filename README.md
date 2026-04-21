@@ -1,73 +1,108 @@
-# React + TypeScript + Vite
+# 🚗 Drive Sell
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma plataforma moderna para compra e venda de veículos, onde usuários podem anunciar carros, explorar opções disponíveis e salvar seus favoritos em tempo real.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Preview
 
-## React Compiler
+> *(adicione prints aqui depois — página inicial, dashboard e detalhes do carro)*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* 🔐 Autenticação de usuários
+* 🚗 Cadastro de veículos
+* 📋 Listagem de carros do usuário
+* 🔎 Busca por nome de veículo
+* ❤️ Sistema de favoritos em tempo real
+* 🧾 Página de detalhes do carro
+* 🗑️ Remoção de veículos
+* 📱 Interface responsiva
+* 🔔 Notificações com toast
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologias utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* React + TypeScript
+* TailwindCSS
+* Supabase (Auth + Database)
+* Swiper (slider)
+* React Hot Toast
+
+---
+
+## 🧠 Conceitos aplicados
+
+* Context API (gerenciamento de estado global)
+* Integração com banco de dados (Supabase)
+* Controle de autenticação
+* Manipulação de estados assíncronos
+* Boas práticas de UX (loading + feedback visual)
+
+---
+
+## ⚙️ Como rodar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/drive-sell.git
+
+# Acesse a pasta
+cd drive-sell
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔑 Configuração do Supabase
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+VITE_SUPABASE_URL=your_url
+VITE_SUPABASE_ANON_KEY=your_key
 ```
+
+---
+
+## 🔒 Segurança
+
+O projeto utiliza políticas de segurança (RLS - Row Level Security) no Supabase para garantir que cada usuário acesse apenas seus próprios dados.
+
+---
+
+## 📈 Melhorias futuras
+
+* Paginação de resultados
+* Filtro avançado (preço, cidade, ano)
+* Upload múltiplo de imagens
+* Deploy online
+* Sistema de chat entre comprador e vendedor
+
+---
+
+## 🌐 Deploy
+
+*(em breve)*
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por você 🚀
+
+---
+
+## 📌 Observações
+
+Este projeto foi desenvolvido com foco em prática de desenvolvimento fullstack moderno, integração com backend e construção de aplicações reais.
+
+---
