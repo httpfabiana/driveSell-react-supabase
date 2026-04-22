@@ -6,7 +6,7 @@ Uma plataforma moderna para compra e venda de veículos, onde usuários podem an
 
 ## 📸 Preview
 
-> *(adicione prints aqui depois — página inicial, dashboard e detalhes do carro)*
+<img src="./assets/home.png" width="100%" />
 
 ---
 
