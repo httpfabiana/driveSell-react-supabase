@@ -6,7 +6,7 @@ Uma plataforma moderna para compra e venda de veículos, onde usuários podem an
 
 ## 📸 Preview
 
-<img src="./assets/logo.png" width="100%" />
+<img src="./src/assets/logo.png" width="100%" />
 
 ---
 
